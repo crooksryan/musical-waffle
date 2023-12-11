@@ -1,0 +1,16 @@
+[package]
+name = "rocket-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0", features = ["json"] }
+rocket_auth = { version = "0.4.0", features = ["sqlx-postgres"] }
+serde = { version="1.0", features = ["derive"] }
+
+[dependencies.rocket_db_pools]
+version = "0.1.0"
+features = ["sqlx_postgres"]
+
